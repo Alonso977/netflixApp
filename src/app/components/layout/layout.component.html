@@ -1,0 +1,63 @@
+<section>
+  <div class="circle"></div>
+<!--  nav -->
+  <header>
+    <a href="#"><img src="../../../assets/img/logo.png" alt="logo" class="logo"></a>
+    <div class="toggle" (click)="toggleMenu()"></div>
+    <ul class="navigation">
+      <li>
+        <span class="mas">HOME</span>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <span class="mas">MENU</span>
+        <a [routerLink]="['menu']">Menu</a>
+      </li>
+      <li>
+        <span class="mas">WHAT'S NEW</span>
+        <a href="#">What's new</a>
+      </li>
+      <li>
+        <span class="mas">CONTACT</span>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </header>
+<!--nav-->
+  <router-outlet></router-outlet>
+
+
+<!--  <div class="content">-->
+<!--    <div class="textBox">-->
+<!--      <h2>Tastte the Feeling</h2>-->
+<!--      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur culpa dicta dolore dolorem dolores-->
+<!--        expedita explicabo inventore libero magnam magni maiores modi necessitatibus, quia quidem quis, repudiandae-->
+<!--        rerum sed similique unde voluptatibus? Accusamus at aut commodi consequuntur eveniet harum inventore laborum,-->
+<!--        maiores quas quidem quod sequi suscipit, tempora vel voluptatum.</p>-->
+<!--      <a href="#" class="btnMore">Learn More</a>-->
+<!--      </div>-->
+
+<!--      <div class="imgBox">-->
+<!--        <div class="swiper-container" [swiper]="config">-->
+<!--          <div class="swiper-wrapper">-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola1.png" alt="coca-cola"></div>-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola2.png" alt="coca-cola"></div>-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola3.png" alt="coca-cola"></div>-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola4.png" alt="coca-cola"></div>-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola5.png" alt="coca-cola"></div>-->
+<!--            <div class="swiper-slide"><img src="../../../assets/img/cocacola6.png" alt="coca-cola"></div>-->
+<!--          </div>-->
+<!--          &lt;!&ndash; Add Pagination &ndash;&gt;-->
+<!--          &lt;!&ndash;        <div class="swiper-pagination"></div>&ndash;&gt;-->
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </div>-->
+    <ul class="sci">
+      <li><a href="#"><img src="../../../assets/img/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="../../../assets/img/twitter.png" alt="twitter"></a></li>
+      <li><a href="#"><img src="../../../assets/img/instagram.png" alt="instagram"></a></li>
+    </ul>
+
+</section>

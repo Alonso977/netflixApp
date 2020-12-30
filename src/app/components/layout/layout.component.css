@@ -1,0 +1,345 @@
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background: #161616;
+}
+
+section .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e51e2a;
+  clip-path: circle(70% at right -20%);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 150px;
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+}
+
+header .navigation li a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+/*.content {*/
+/*  position: relative;*/
+/*  width: 100%;*/
+/*  display: flex;*/
+/*  justify-content: space-between;*/
+/*  align-items: center;*/
+/*}*/
+
+/*.content .textBox {*/
+/*  position: relative;*/
+/*  max-width: 600px;*/
+/*  margin-right: 20px;*/
+/*}*/
+
+/*.content .textBox h2 {*/
+/*  color: #fff;*/
+/*  font-size: 3em;*/
+/*  margin-bottom: 10px;*/
+/*  line-height: 1.4em;*/
+/*  font-weight: 700;*/
+/*}*/
+
+/*.content .textBox p {*/
+/*  color: #fff;*/
+/*}*/
+
+/*.content .textBox a {*/
+/*  display: inline-block;*/
+/*  margin-top: 20px;*/
+/*  padding: 8px 20px;*/
+/*  background: #e51e2a;*/
+/*  color: #fff;*/
+/*  border-radius: 40px;*/
+/*  font-weight: 500;*/
+/*  letter-spacing: 1px;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.content .textBox a:hover {*/
+/*  background: gray;*/
+/*  transform: translateY(-2px);*/
+/*  transition: 0.2s ease-in-out;*/
+/*}*/
+
+.sci {
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: flex;
+  margin-left: 15px;
+  background: #222;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+}
+
+.sci li a:hover {
+  background: #e51e2a;
+  transform: translateY(-10px);
+}
+
+.sci li a img {
+  filter: invert(1);
+  transform: scale(0.5);
+}
+
+/*!*Sliderr*!*/
+/*.swiper-container {*/
+/*  width: 100%;*/
+/*  padding-top: 50px;*/
+/*  padding-bottom: 50px;*/
+/*}*/
+
+/*.swiper-slide {*/
+/*  background-position: center;*/
+/*  background-size: cover;*/
+/*  width: 180px;*/
+/*  height: 460px;*/
+/*  display: flex;*/
+/*}*/
+
+/*.content .imgBox {*/
+/*  width: 500px;*/
+/*  display: flex;*/
+/*  justify-content: flex-end;*/
+/*}*/
+
+/*.content .imgBox img {*/
+/*  max-width: 150px;*/
+/*}*/
+
+/*.swiper-slide img {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  max-height: 100%;*/
+/*}*/
+
+element.style {
+  transition-duration: 0ms;
+  transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) scale(1);
+  z-index: 0;
+}
+
+/*.swiper-slide[_ngcontent-vbo-c20] {*/
+/*  background-position: center;*/
+/*  background-size: cover;*/
+/*  width: 180px;*/
+/*  height: 460px;*/
+/*  display: flex;*/
+/*}*/
+
+@media (max-width: 991px) {
+  header {
+    padding: 40px;
+  }
+
+  section {
+    display: block;
+    padding: 150px 40px;
+  }
+
+  .sci {
+    left: 40px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content .textBox,
+  .content .imgBox {
+    max-width: 100%;
+  }
+
+  .swiper-slide {
+    height: 300px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  header .navigation.active li a {
+    font-weight: 400;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .toggle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url("../../../assets/img/menu.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .toggle.active {
+    position: fixed;
+    right: 40px;
+    background: url("../../../assets/img/close.png");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*Estilos para el link*/
+
+header .navigation li {
+  position: relative;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1vh;
+  overflow: hidden;
+  border: 1px solid;
+  font-weight: 300;
+  font-size: 20px;
+  transition: .5s;
+  letter-spacing: 1px;
+  border-radius: 16px;
+}
+
+header .navigation li a {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 16px;
+  height: 100%;
+  font-weight: 300;
+  font-size: 20px;
+  margin: auto;
+  letter-spacing: 1px;
+  background: #000;
+  -webkit-mask: url(https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png);
+  -webkit-mask-size: 2300% 100%;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  animation: ani2 .7s steps(22) forwards
+}
+
+header .navigation li a:hover {
+  -webkit-animation: ani .7s steps(22) forwards;
+  animation: ani .7s steps(22) forwards
+}
+
+.mas {
+  color: #000;
+  text-align: center;
+  width: 101%;
+  font-weight: 300;
+  position: absolute;
+  font-size: 20px;
+  margin: 15px auto;
+  overflow: hidden;
+}
+
+@-webkit-keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+}
+
+@keyframes ani {
+  from {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0
+  }
+  to {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+}
+
+@-webkit-keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0
+  }
+}
+
+@keyframes ani2 {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0
+  }
+  to {
+    -webkit-mask-position: 0 0;
+    mask-position: 0 0
+  }
+}
